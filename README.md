@@ -2,11 +2,33 @@
     <a href="https://assegaiphp.com/" target="blank"><img src="https://assegaiphp.com/images/logos/logo-cropped.png" width="200" alt="Assegai Logo"></a>
 </div>
 
+<p align="center">
+  <a href="https://github.com/assegaiphp/validation/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/assegaiphp/validation?display_name=tag&sort=semver&style=flat-square"></a>
+  <a href="https://github.com/assegaiphp/validation/actions/workflows/php.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/assegaiphp/validation/php.yml?branch=main&label=tests&style=flat-square"></a>
+  <img alt="PHP 8.4+" src="https://img.shields.io/badge/PHP-8.4%2B-777BB4?style=flat-square&logo=php&logoColor=white">
+  <a href="https://github.com/assegaiphp/validation/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/assegaiphp/validation?style=flat-square"></a>
+  <img alt="Status active" src="https://img.shields.io/badge/status-active-10b981?style=flat-square">
+</p>
+
 <p align="center">A progressive <a href="https://php.net">PHP</a> framework for building efficient and scalable server-side applications.</p>
 
 # AssegaiPHP Validation
 
 Welcome to the AssegaiPHP validation package! This package is designed to provide a simple and easy-to-use solution for validating data in your AssegaiPHP projects.
+
+## Contribution workflow
+
+For commit and pull request conventions in this repo, see:
+
+- [docs/commit-and-pr-guidelines.md](./docs/commit-and-pr-guidelines.md)
+
+Git hooks for this repository live in [`.githooks`](./.githooks). Running `composer install` or `composer update`
+automatically configures `core.hooksPath` for this clone so the committed `pre-push` checks are used. To apply the
+hook configuration manually, run:
+
+```bash
+composer run hooks:install
+```
 
 ## Installation
 To install this package, run the following command in your project's root directory:

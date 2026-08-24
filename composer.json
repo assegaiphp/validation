@@ -3,10 +3,20 @@
     "description": "Introducing the AssegaiPHP Validation package, the ultimate tool for ensuring the integrity and accuracy of your application's data. With this package, you can easily implement validation rules for incoming data, whether it be from a form submission, API request, or any other source. The package utilizes a simple, yet powerful syntax that allows you to specify a wide range of validation rules with ease. Additionally, the package integrates seamlessly with the AssegaiPHP framework, making it an essential addition to any AssegaiPHP project. With this package, you'll have peace of mind knowing that your application is receiving clean and accurate data every time.",
     "type": "library",
     "scripts": {
-        "test:unit": "codecept run Unit"
+        "test:unit": "codecept run Unit",
+        "test": "php -d register_argc_argv=On vendor/bin/codecept run Unit",
+        "hooks:install": [
+            "git config core.hooksPath .githooks"
+        ],
+        "post-install-cmd": [
+            "@hooks:install"
+        ],
+        "post-update-cmd": [
+            "@hooks:install"
+        ]
     },
     "require": {
-        "php": "^8.2",
+        "php": ">=8.4",
         "arubacao/tld-checker": "^1.2",
         "giggsey/libphonenumber-for-php": "^8.13"
     },
