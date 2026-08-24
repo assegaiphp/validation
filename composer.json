@@ -4,7 +4,16 @@
     "type": "library",
     "scripts": {
         "test:unit": "codecept run Unit",
-        "test": "php -d register_argc_argv=On vendor/bin/codecept run Unit"
+        "test": "php -d register_argc_argv=On vendor/bin/codecept run Unit",
+        "hooks:install": [
+            "git config core.hooksPath .githooks"
+        ],
+        "post-install-cmd": [
+            "@hooks:install"
+        ],
+        "post-update-cmd": [
+            "@hooks:install"
+        ]
     },
     "require": {
         "php": ">=8.4",

@@ -22,6 +22,14 @@ For commit and pull request conventions in this repo, see:
 
 - [docs/commit-and-pr-guidelines.md](./docs/commit-and-pr-guidelines.md)
 
+Git hooks for this repository live in [`.githooks`](./.githooks). Running `composer install` or `composer update`
+automatically configures `core.hooksPath` for this clone so the committed `pre-push` checks are used. To apply the
+hook configuration manually, run:
+
+```bash
+composer run hooks:install
+```
+
 ## Installation
 To install this package, run the following command in your project's root directory:
 
