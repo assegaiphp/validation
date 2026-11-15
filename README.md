@@ -23,7 +23,7 @@
 ## Installation
 
 ```bash
-composer require assegaiphp/validation
+composer require 'assegaiphp/validation:~0.11.0'
 ```
 
 ## Validate a value
