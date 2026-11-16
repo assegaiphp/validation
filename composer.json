@@ -1,6 +1,6 @@
 {
     "name": "assegaiphp/validation",
-    "description": "Introducing the AssegaiPHP Validation package, the ultimate tool for ensuring the integrity and accuracy of your application's data. With this package, you can easily implement validation rules for incoming data, whether it be from a form submission, API request, or any other source. The package utilizes a simple, yet powerful syntax that allows you to specify a wide range of validation rules with ease. Additionally, the package integrates seamlessly with the AssegaiPHP framework, making it an essential addition to any AssegaiPHP project. With this package, you'll have peace of mind knowing that your application is receiving clean and accurate data every time.",
+    "description": "Rule- and attribute-based validation for PHP values and AssegaiPHP DTOs.",
     "type": "library",
     "scripts": {
         "test:unit": "codecept run Unit",
